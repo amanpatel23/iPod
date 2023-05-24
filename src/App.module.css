@@ -1,0 +1,13 @@
+.ipod__outer {
+    background: #444;
+    width: 100vw;
+    height: 100vh;
+}
+
+.ipod__inner {
+    height: 100%;
+    /* background: green; */
+    width: 500px;
+    margin: auto;
+    padding-top: 20px;
+}

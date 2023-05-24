@@ -1,0 +1,28 @@
+.screen__outer {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px 14px 0 0;
+}
+
+.screen__inner {
+    display: flex;
+}
+
+.page__name {
+    background: #007AFF;
+    width: 100%;
+    text-align: center;
+    border-radius: 14px 14px 0 0;
+}
+
+.page__name p {
+    color: #fff;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
