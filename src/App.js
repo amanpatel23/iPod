@@ -9,6 +9,7 @@ class App extends Component {
 
   constructor() {
     super();
+    // declaring and defining states to be used
     this.state = {
       menuItems: ['CoverFlow', 'Music', 'Games', 'Settings'],
       activeIndex: 0,
@@ -16,20 +17,24 @@ class App extends Component {
     }
   }
 
+  // event for changing active index on rotation
   handleActiveIndexInc = () => {
     this.setState((prevState) => ({activeIndex: (prevState.activeIndex + 1) % 4}))
   }
 
+  // event for changing active index on rotation
   handleActiveIndexDec = () => {
     this.setState((prevState) => ({activeIndex: (prevState.activeIndex - 1 + 4) % 4}))
   }
 
+  // event for handling click on menu items(to go to specific item page)
   handleClickMenuItem = () => {
     this.setState({
       clicked: true
     })
   }
 
+  // event for handling click on menu button(to go to the previous page)
   handleClickMenuButton = () => {
     this.setState({
       clicked: false
@@ -43,6 +48,7 @@ class App extends Component {
       <>
       <div className={styles.ipod__outer}>
         <div className={styles.ipod__inner}>
+          {/* ternary operator to show the screens */}
           {clicked 
           ? 
           <SingleItemScreen 
@@ -53,6 +59,7 @@ class App extends Component {
           activeIndex = {activeIndex}
           menuItems = {menuItems}
           />}
+          {/* Wheel Commpoent */}
           <Wheel 
           clicked = {this.state.clicked}
           handleActiveIndexInc = {this.handleActiveIndexInc}

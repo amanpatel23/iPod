@@ -3,7 +3,7 @@ import styles from './SingleItemScreen.module.css';
 
 class SingleItemScreen extends Component {
     render() {
-
+        // name of the active item 
         const { itemName } = this.props;
         return (
             <>
@@ -12,6 +12,7 @@ class SingleItemScreen extends Component {
             }}>
                 <div className={styles.screen__inner}>
                     <div className={styles.page__name}>
+                        {/* displaying name of the list item of the single page */}
                         <p>{itemName}</p>
                     </div>
                 </div>

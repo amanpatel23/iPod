@@ -4,6 +4,7 @@ import styles from './Screen.module.css';
 class Screen extends Component {
 
     render() {
+        // destructuring props got from App Component 
         const { activeIndex, menuItems } = this.props;
         return (
             <>
@@ -15,6 +16,7 @@ class Screen extends Component {
                         </div>
                         <div className={styles.items__container}>
                             <ul>
+                                {/* loopting through list itmes and displaying it on screen */}
                                 {menuItems.map((item, index) => (
                                     <li key = {index} id={index === activeIndex ? styles.active : null}>
                                         <div className={styles.single__item}>
