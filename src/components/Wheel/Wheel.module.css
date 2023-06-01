@@ -35,7 +35,6 @@
     left: 50%;
     transform: translateX(-50%);
     top: 10%;
-    /* background: green; */
     height: max-content;
     padding: 4px;
 }
